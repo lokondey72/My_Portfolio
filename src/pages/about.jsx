@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="container mx-auto px-4 py-10 text-center">
-      <div className="flex">
-        <div className="flex justify-center items-center min-h-screen">
+      <div className="md:flex">
+        <div className="flex justify-center items-center md:min-h-screen">
           <div className="relative group">
             <img
               src="/portfolio_img-1.jpg"
