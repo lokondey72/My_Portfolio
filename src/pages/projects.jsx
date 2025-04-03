@@ -5,7 +5,8 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A fully functional e-commerce site built with React and Tailwind CSS.",
-    link: "#",
+    link: "https://shop-e-commerce-blue.vercel.app/",
+    target: "_blank",
   },
   {
     title: "Portfolio Website",
