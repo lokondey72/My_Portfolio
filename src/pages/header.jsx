@@ -3,28 +3,36 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="flex bg-indigo-600 text-white py-5 px-2.5">
-      <div className="flex items-center justify-center">
+    <header className="container flex justify-between bg-indigo-600 text-white py-5 px-2.5">
+      {/* <div className="flex items-center justify-center">
         <a
           className="text-4xl"
           href="https://www.facebook.com/tanha.kabir.9461"
         >
           <FaFacebook />
         </a>
+      </div> */}
+      <div className="flex gap-2.5">
+        <h1 className="md:text-4xl font-semibold">Portfolio For</h1>
+        <p className="text-xl md:text-2xl font-medium">(Web Dev)</p>
+        
       </div>
-      <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-semibold">Rikto Dey Lokon</h1>
-        <h2 className="text-2xl font-medium my-2">Web Designer</h2>
-        <p className="text-lg">Crafting beautiful and functional web designs</p>
+      <div>
+        <a
+          href="#portfolio"
+          className="inline-block px-8 py-3 text-lg font-semibold bg-indigo-500 hover:bg-indigo-600 rounded-lg transition duration-300"
+        >
+          Contact Me
+        </a>
       </div>
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <a
           className="text-4xl"
-          href="https://www.facebook.com/tanha.kabir.9461"
+          href="https://github.com/lokondey72"
         >
           <FaGithub />
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };

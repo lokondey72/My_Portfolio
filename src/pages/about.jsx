@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -19,13 +20,37 @@ const About = () => {
           </div>
         </div>
         <div className="p-20">
-          <h2 className="text-3xl font-semibold text-indigo-600">About Me</h2>
-          <p className="mt-4 text-lg">
-            I'm a passionate web designer with a focus on creating user-friendly
-            and visually appealing websites. With a strong understanding of
-            design principles and front-end technologies, I strive to deliver
-            exceptional digital experiences.
-          </p>
+          <div>
+            <h2 className="text-3xl font-semibold text-indigo-600">About Me</h2>
+            <p className="mt-4 text-lg">
+              I'm a passionate web designer with a focus on creating
+              user-friendly and visually appealing websites. With a strong
+              understanding of design principles and front-end technologies, I
+              strive to deliver exceptional digital experiences.
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-5 my-12 py-5">
+            <a
+              className="text-4xl"
+              href="https://www.facebook.com/tanha.kabir.9461"
+            >
+              <FaFacebook />
+            </a>
+            <a className="text-4xl" href="https://github.com/lokondey72">
+              <FaGithub />
+            </a>
+            <a className="text-4xl" href="https://github.com/lokondey72">
+              <FaLinkedin />
+            </a>
+          </div>
+          <div>
+            <a
+              href="#portfolio"
+              className="inline-block px-8 py-3 text-lg font-semibold bg-indigo-500 hover:bg-indigo-600 rounded-lg transition duration-300"
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
       </div>
     </section>
