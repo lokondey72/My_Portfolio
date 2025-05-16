@@ -1,5 +1,6 @@
 import About from "@/pages/about";
 import Banner from "@/pages/banner";
+import ExperienceEducation from "@/pages/ExperienceEducation";
 import Projects from "@/pages/projects";
 import Skills from "@/pages/skills";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
         <Banner />
         <About />
         <Skills />
+        <ExperienceEducation />
         <Projects />
       </main>
     </div>

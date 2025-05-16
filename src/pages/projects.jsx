@@ -22,25 +22,33 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="container mx-auto px-4 py-12">
-      <h2 className="text-3xl font-semibold text-indigo-600 text-center">
-        Projects
-      </h2>
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <div key={index} className="bg-white shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-medium text-indigo-700">
-              {project.title}
-            </h3>
-            <p className="mt-2">{project.description}</p>
-            <a
-              href={project.link}
-              className="mt-4 inline-block text-indigo-600 hover:underline"
+    <section id="projects" className="bg-gray-50 py-16 px-6">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600 mb-12">
+          Projects
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 p-6 text-left"
             >
-              View Project
-            </a>
-          </div>
-        ))}
+              <h3 className="text-2xl font-semibold text-indigo-700 mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <a
+                href={project.link}
+                target={project.target || "_self"}
+                rel="noopener noreferrer"
+                className="inline-block px-5 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-full transition duration-300"
+              >
+                View Project
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
